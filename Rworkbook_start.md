@@ -60,3 +60,10 @@ if (!requireNamespace("BiocManager", quietly = TRUE))
 And then we can load the appropriate librarie
 
 
+
+conda create -n r_bioc_env -c conda-forge -c bioconda \
+  r-base=4.4.0 r-tidyverse
+
+conda activate r_bioc_env                                                          
+
+conda install -c conda-forge r-tidyverse
